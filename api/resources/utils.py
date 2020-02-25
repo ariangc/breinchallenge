@@ -36,7 +36,7 @@ def preprocess_image(img):
 def load_model(model_path):
 
     model = ResNet18(imagenet_weights=False)
-    model.load_state_dict(torch.load(os.path.join(models_path, 'ResNet18.pth'), map_location=device))
+    model.load_state_dict(torch.load(os.path.join(model_path, 'ResNet18.pth'), map_location=device))
     model.to(device)
 
     return model

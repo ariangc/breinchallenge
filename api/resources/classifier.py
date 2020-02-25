@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 from io import BytesIO
 
-import utils
+from resources import utils
 
 class MarketClassification(object):
     def __init__(self,models_path):
